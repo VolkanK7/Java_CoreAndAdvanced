@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/Optional/Optional.iml" filepath="$PROJECT_DIR$/Optional/Optional.iml" />
       <module fileurl="file://$PROJECT_DIR$/Regex/Regex.iml" filepath="$PROJECT_DIR$/Regex/Regex.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stream/Stream.iml" filepath="$PROJECT_DIR$/Stream/Stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stream/Stream2/Stream2.iml" filepath="$PROJECT_DIR$/Stream/Stream2/Stream2.iml" />
       <module fileurl="file://$PROJECT_DIR$/String_Operations/String_Operations.iml" filepath="$PROJECT_DIR$/String_Operations/String_Operations.iml" />
     </modules>
   </component>
