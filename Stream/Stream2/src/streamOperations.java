@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class streamOperations {
@@ -17,7 +14,7 @@ public class streamOperations {
 
     public static void main(String[] args) {
         streamOperations streamOperations = new streamOperations();
-        streamOperations.test8();
+        streamOperations.test9();
     }
 
     //Loop over each element afterward manipulate the object and write to console.
@@ -97,11 +94,15 @@ public class streamOperations {
 
     //Let’s drop out User whose firstName`s first character is M letter and is older than 10.
     private void test8() {
-        System.out.println("Test 10");
         userList.stream()
                 .filter(p -> (p.getFirstName().charAt(0) != 'M'))
                 .filter(p -> (p.getAge() > 10))
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
+    }
+    //List to Map with stream
+    private void test9(){
+        Map<Long, String> mappedList = userList.stream().collect(Collectors.toMap(User::getId,User::getFirstName));
+        mappedList.forEach((key, value) -> System.out.println(key +":"+ value));
     }
 }
